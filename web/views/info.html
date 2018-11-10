@@ -1,0 +1,15 @@
+{{if gt .info.Id 0}}
+    <div class="col-xs-6 col-md-3">
+        <table class="table">
+            <tbody>
+        <tr><td>中文名</td><td>{{.info.Name}}</td></tr>
+        <tr><td>英文名</td><td>{{.info.Poster}}</td></tr>
+        <tr><td>出生日期</td><td>{{.info.Year}}</td></tr>
+        
+    </tbody>
+    </table>
+    </div>
+{{else}}
+    没有球员信息，<a href="/">返回首页</a>
+{{end}}
+<br style="clear: both;"/>

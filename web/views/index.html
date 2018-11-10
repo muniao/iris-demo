@@ -1,0 +1,11 @@
+<div>
+{{range $i, $data := .Datalist}}
+    <div class="col-xs-6 col-md-3">
+        <a href="/{{.Id}}" class="thumbnail" style="text-align: center;">
+            <span>{{.Poster}}</span>|
+            <span>{{.Name}}</span>
+        </a>
+    </div>
+{{end}}
+</div>
+<br style="clear: both;"/>
